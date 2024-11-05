@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -21,11 +21,13 @@ function Header() {
         <UserButton />
       ) : (
         <div className="flex gap-3 items-center">
-          <Link href="/dashboard">
-            <Button variant="outline" className="rounded-full" >Dashboard</Button>
+          <Link href={"/dashboard"}>
+            <Button variant="outline" className="rounded-full">
+              Dashboard
+            </Button>
           </Link>
-          <Link href="/dashboard">
-            <Button className="rounded-full" >iniciar</Button>
+          <Link href={"/sign-in"}>
+            <Button className="rounded-full">Get Started</Button>
           </Link>
         </div>
       )}
